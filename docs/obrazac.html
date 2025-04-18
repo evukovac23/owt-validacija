@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Emanuel Vukovac">
+  <meta name="keywords" content="AI, ChatGPT, Deepseek, Preplexity, alati">   
+  <title>Obrazac</title>
+  <link rel="stylesheet" href="../css/evukovac23.css">
+</head>
+<body>
+  <header> 
+    <a href="../index.html"> <img src="../resursi/slike/logo.png" alt="peepo" width="50" height="50"></a>     
+    <h1>
+      Obrazac
+    </h1>
+  </header>
+
+  <nav class="navigacija">
+    <a href="../index.html">Početna</a>
+    <a href="../html/oAutoru.html">Stranica autora</a>
+    <a href="../html/dokumentacija.html">Dokumentacija</a>
+    <a href="../html/obrazac.html">Povratne informacije</a>
+    <a href="../html/zanimljivosti.html">Zanimljivosti</a>
+  </nav>
+
+  <main>
+    <section id="obrazac">
+      <form action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post" class="obrazac">
+        <h2>Obrazac za povratne informacije</h2>
+      
+        <!-- Osnovni podaci -->
+        <label for="korime">Korisničko ime:</label>
+        <input type="text" id="korime" name="korime" placeholder="npr. evukovac23"><br><br>
+      
+        <label for="lozinka">Lozinka:</label>
+        <input type="password" id="lozinka" name="lozinka" placeholder="Unesite lozinku"><br><br>
+      
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" placeholder="Vaše ime"><br><br>
+      
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime"><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="primjer@gmail.com"><br><br>
+      
+        <label for="broj">Broj mobitela: </label>
+        <input type="tel" id="broj" name="broj" placeholder="091 1234 567"><br><br>
+      
+        <label for="datum">Datum rođenja:</label>
+        <input type="date" id="datum" name="datum"><br><br>
+      
+        <!-- Lokacija -->
+        <label for="drzava">Država:</label>
+        <select id="drzava" name="drzava">
+          <option value="sad">SAD</option>
+          <option value="hrvatska">Hrvatska</option>
+          <option value="kina">Kina</option>
+        </select><br><br>
+      
+        <label for="grad">Grad:</label>
+        <select id="grad" name="grad">
+          <option value="zagreb">Zagreb</option>
+          <option value="rijeka">New York</option>
+          <option value="osijek">Shanghai</option>
+        </select><br><br>
+      
+        <!-- Profilne informacije -->
+        <label for="slika">Osobna slika:</label>
+        <input type="file" id="slika" name="slika"><br><br>
+      
+        <label for="boja">Omiljena boja:</label>
+        <input type="color" id="boja" name="boja"><br><br>
+      
+        <label for="web">Osobna web stranica ili GitHub profil:</label>
+        <input type="url" id="web" name="web" placeholder="https://github.com/ime"><br><br>
+      
+        <!-- Interesi i spol -->
+        <p>Spol:</p>
+        <input type="radio" id="muski" name="spol" value="M">
+        <label for="muski">Muško</label>
+        <input type="radio" id="zenski" name="spol" value="Ž">
+        <label for="zenski">Žensko</label>
+        <input type="radio" id="ostalo" name="spol" value="O">
+        <label for="ostalo">Ostalo</label><br><br>
+      
+        <p>Interesi:</p>
+        <input type="checkbox" id="ai" name="interesi" value="AI">
+        <label for="ai">Umjetna inteligencija</label><br>
+        <input type="checkbox" id="programiranje1" name="interesi" value="Programiranje">
+        <label for="programiranje1">Programiranje</label><br>
+        <input type="checkbox" id="webstranice" name="interesi" value="Web">
+        <label for="webstranice">Izrada web stranica</label><br>
+        <input type="checkbox" id="igre" name="interesi" value="Igre">
+        <label for="igre">Video igre</label><br><br>
+      
+        <!-- AI navike -->
+        <label for="ucestalost">Koliko često koristite AI alate?</label>
+        <input type="number" id="ucestalost" name="ucestalost" min="0" max="100"> puta mjesečno<br><br>
+      
+        <label for="razina">Razina zadovoljstva (1-5):</label>
+        <input type="range" id="razina" name="razina" min="1" max="5"><br><br>
+      
+        <label for="vrijeme">Okvirno vrijeme pristupa stranici:</label>
+        <input type="time" id="vrijeme" name="vrijeme"><br><br>
+      
+        <label for="mjesec">Mjesec kada ste prvi put koristili AI alat:</label>
+        <input type="month" id="mjesec" name="mjesec"><br><br>
+      
+        <label for="tjedan">Tjedan kada ste najčešće koristili AI:</label>
+        <input type="week" id="tjedan" name="tjedan"><br><br>
+      
+        <!-- Komunikacija -->
+        <label for="kontakt">Pretplata na newsletter?:</label><br>
+        <input type="radio" id="kontakt-da" name="kontakt" value="da">
+        <label for="kontakt-da">Da</label>
+        <input type="radio" id="kontakt-ne" name="kontakt" value="ne">
+        <label for="kontakt-ne">Ne</label><br><br>
+      
+        <label for="poruka">Dodatna poruka:</label><br>
+        <textarea id="poruka" name="poruka" rows="4"></textarea><br><br>
+      
+        <!-- Gumbi -->
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Resetiraj">
+      </form>
+      
+    </section>
+
+</main>
+
+<footer>
+  <a href="https://chatgpt.com/"> <img src="../resursi/slike/ChatGPT-logo.png" alt="chat" width="40" height="40" ></a>
+  <a href="https://www.perplexity.ai/"> <img src="../resursi/slike/Perplexity-logo.png" alt="preplexity" width="50" height="50" ></a>
+  <a href="https://chat.deepseek.com/"> <img src="../resursi/slike/deepseek-logo.png" alt="deepeseek" width="50" height="50" ></a>
+  <p> Emanuel Vukovac &copy; 2025.</p>
+  <a href="http://validator.w3.org/check?uri=%7buri%7d/"> <img src="../resursi/slike/HTML5.png" alt="html" width="50" height="50" ></a>
+</footer>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="AI, ChatGPT, Deepseek, Preplexity, alati">
+    <meta name="author" content="Emanuel Vukovac">
+    <title>AI Alati</title>
+    <link rel="stylesheet" href="css/evukovac23.css">
+
+</head>
+<body>
+  <header>
+    <a href="index.html"> <img src="resursi/slike/logo.png" alt="peepo" width="50" height="50"></a> 
+    <h1>
+      Web aplikacija za prikaz alata umjetne inteligencije (AI)
+    </h1>
+  </header>
+    
+    <nav class="navigacija">
+      <a href="index.html">Početna</a>
+      <a href="html/oAutoru.html">Stranica autora</a>
+      <a href="html/dokumentacija.html">Dokumentacija</a>
+      <a href="html/obrazac.html">Povratne informacije</a>
+      <a href="html/zanimljivosti.html">Zanimljivosti</a>
+    </nav>
+
+  <main>
+    <section class="karusel-okvir">
+        <input type="radio" name="slajd" id="slajd1" checked />
+        <input type="radio" name="slajd" id="slajd2" />
+        <input type="radio" name="slajd" id="slajd3" />
+    
+        <div class="karusel">
+          <div class="slajd" id="s1">
+            <img class="pozadina" src="resursi/slike/ChatGPT.png" alt="ChatGPT pozadina" />
+            <h2>ChatGPT</h2>
+            <a href="html/detalji.html#chatgpt" class="gumb" target="_blank">Detalji</a>
+          </div>
+
+          <div class="slajd">
+            <img class="pozadina" src="resursi/slike/DeepSeek.png" alt="Deepseek pozadina" />
+            <h2>Deepseek</h2>
+            <a href="html/detalji.html#deepseek" class="gumb" target="_blank">Detalji</a>
+          </div>
+    
+          <div class="slajd">
+            <img class="pozadina preplexity-smanjena" src="resursi/slike/preplexity.png" alt="Preplexity pozadina" />
+            <h2>Perplexity</h2>
+            <a href="html/detalji.html#preplexity" class="gumb" target="_blank">Detalji</a>
+          </div>
+        </div>
+    
+        <!-- Navigacija -->
+        <div class="karusel-navigacija">
+            <!--slajd 1 -->
+            <label for="slajd3" class="strelica L label1"></label> <!-- lijevo ide na slajd 3 -->
+            <label for="slajd2" class="strelica D label1"></label> <!-- desno ide na slajd 2 -->
+
+            <!--slajd 2 -->
+            <label for="slajd1" class="strelica L label2"></label> <!-- lijevo ide na slajd 1 -->
+            <label for="slajd3" class="strelica D label2"></label> <!-- desno ide na slajd 3 -->
+
+            <!--slajd 3 -->
+            <label for="slajd2" class="strelica L label3"></label> <!-- lijevo ide na slajd 2 -->
+            <label for="slajd1" class="strelica D label3"></label> <!-- desno ide na slajd 1 -->
+        </div>
+    </section>
+
+
+      <!--TABLICA-->
+      <section id="cpp">
+        <h2>Često postavljana pitanja (ČPP)</h2>
+        <table class="tablica-ppp tablica-preklop">
+          <thead>
+            <tr>
+              <th>Pitanje</th>
+              <th>Odgovor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="redak-preklop">
+              <td colspan="2">
+                <input type="checkbox" id="p1" class="preklop-oznaka">
+                <label for="p1" class="preklop-naslov">1. Što je umjetna inteligencija (AI)?</label>
+                <div class="preklop-sadrzaj">Umjetna inteligencija je područje računarstva koje se bavi razvojem sustava sposobnih za obavljanje zadataka koji zahtijevaju ljudsku inteligenciju, poput prepoznavanja govora, učenja, planiranja i rješavanja problema.</div>
+              </td>
+            </tr>
+            <tr class="redak-preklop">
+              <td colspan="2">
+                <input type="checkbox" id="p2" class="preklop-oznaka">
+                <label for="p2" class="preklop-naslov">2. Koja je razlika između ChatGPT-a, DeepSeek-a i Perplexity-ja?</label>
+                <div class="preklop-sadrzaj">
+                  <li>ChatGPT je konverzacijski AI alat razvijen od strane OpenAI, dizajniran za razgovor, objašnjavanje i pomoć u raznim zadacima – od pisanja eseja do rješavanja zadataka. Fokusiran je na prirodnost odgovora i prilagodbu kontekstu.</li>
+
+                  <li>DeepSeek je napredni AI model koji se ističe u tehničkim zadacima, posebno kod matematike i programiranja, čak i kada su zadaci nejasno formulirani. Otvorenog je koda i posebno dobro funkcionira na kineskom jeziku.</li>
+                  
+                  <li>Perplexity je AI alat za pretraživanje informacija, koji koristi više modela i vraća odgovore s citiranim izvorima. Idealno je rješenje za korisnike koji traže točne i provjerene informacije, uz dodatne funkcije poput “Pro Search”.</li>
+                </div>
+              </td>
+            </tr>
+            <tr class="redak-preklop">
+              <td colspan="2">
+                <input type="checkbox" id="p3" class="preklop-oznaka">
+                <label for="p3" class="preklop-naslov">3. Jesu li svi AI alati dostupni na hrvatskom jeziku?</label>
+                <div class="preklop-sadrzaj">Da, ali iako podržavaju hrvatski, većina alata najbolje funkcionira na engleskom jeziku. Kvaliteta prijevoda ovisi o konkretnom alatu i njegovim mogućnostima.</div>
+              </td>
+            </tr>
+            <tr class="redak-preklop">
+              <td colspan="2">
+                <input type="checkbox" id="p4" class="preklop-oznaka">
+                <label for="p4" class="preklop-naslov">4. Mogu li se AI alati koristiti besplatno?</label>
+                <div class="preklop-sadrzaj">Većina AI alata nudi besplatne verzije s ograničenim mogućnostima, dok napredne značajke često zahtijevaju plaćenu pretplatu ili korisnički račun.</div>
+              </td>
+            </tr>
+            <tr class="redak-preklop">
+              <td colspan="2">
+                <input type="checkbox" id="p5" class="preklop-oznaka">
+                <label for="p5" class="preklop-naslov">5. Koji alat se može koristiti bez registracije?</label>
+                <div class="preklop-sadrzaj">Perplexity i DeepSeek često dozvoljavaju korištenje bez računa, dok ChatGPT zahtijeva prijavu.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="cpp">
+        <h2>Često postavljana pitanja (ČPP)</h2>
+        <table class="tablica">
+          <thead>
+            <tr>
+              <th>Pitanje</th>
+              <th>Odgovor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Što je umjetna inteligencija (AI)?</td>
+              <td>Umjetna inteligencija je područje računarstva koje se bavi razvojem sustava sposobnih za obavljanje zadataka koji zahtijevaju ljudsku inteligenciju, poput prepoznavanja govora, učenja, planiranja i rješavanja problema.</td>
+            </tr>
+            <tr>
+              <td>2. Koja je razlika između ChatGPT-a, DeepSeek-a i Perplexity-ja?</td>
+              <td>
+                <ul>
+                  <li>ChatGPT – konverzacijski AI alat fokusiran na razgovor i pomoć korisnicima u širokom rasponu zadataka.</li>
+                  <li>DeepSeek – specijaliziran za rješavanje tehničkih problema, otvorenog koda i jak na kineskom jeziku.</li>
+                  <li>Perplexity – AI za pretragu s citatima izvora, idealan za informirane i točne odgovore.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>3. Jesu li svi AI alati dostupni na hrvatskom jeziku?</td>
+              <td>Da, ali većina bolje funkcionira na engleskom jeziku. Kvaliteta prijevoda varira ovisno o alatu.</td>
+            </tr>
+            <tr>
+              <td>4. Mogu li se AI alati koristiti besplatno?</td>
+              <td>Većina nudi besplatne verzije s ograničenim mogućnostima. Napredne značajke često zahtijevaju plaćenu pretplatu.</td>
+            </tr>
+            <tr>
+              <td>5. Koji alat se može koristiti bez registracije?</td>
+              <td>Perplexity i DeepSeek često se mogu koristiti bez računa. ChatGPT obično zahtijeva prijavu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      
+      
+        <div class="stupci">
+            <div class="blok">
+                <h3>Utjecaj ChatGPT-a na obrazovanje</h3>
+                <p>
+                  ChatGPT ima značajan utjecaj na obrazovanje jer omogućava lakši pristup informacijama i individualizirano učenje. Učenici i studenti mogu koristiti ovu tehnologiju za brzo dobivanje objašnjenja složenih pojmova, pomoć pri pisanju eseja, rješavanju matematičkih zadataka ili pripremi za ispite. Nastavnici ga koriste za osmišljavanje nastavnih materijala, kvizova i planiranje lekcija. Osim toga, ChatGPT potiče razvoj kritičkog mišljenja jer korisnici uče prepoznati točne i relevantne informacije kroz interakciju. Ipak, postoji i zabrinutost da bi prekomjerno oslanjanje na umjetnu inteligenciju moglo smanjiti motivaciju za samostalno razmišljanje. Stoga je važno koristiti ChatGPT kao alat za podršku učenju, a ne kao zamjenu za tradicionalne obrazovne metode. Pravilna integracija u obrazovni sustav može značajno unaprijediti kvalitetu i dostupnost obrazovanja.
+                    <span class="fusnota">* Prompt korišten za generaciju teksta: "Napiši paragraf od minimalno 100 riječi o utjecaju ChatGPT-a na obrazovanje."</span>
+                </p>
+            </div>
+ 
+
+   
+         
+            
+            <div class="blok">
+              <h3>Perplexity u osnosu na ostale AI alate</h3>
+              <p>Perplexity se razlikuje od ChatGPT-a i DeepSeek-a po tome što integrira stvarno-vremensko pretraživanje interneta kako bi pružio točne, provjerene i citirane informacije, dok se ChatGPT fokusira na svestranu konverzaciju, kreativno pisanje i kodiranje, 
+                a DeepSeek je specijaliziran za tehničke zadatke i kineski jezik uz efikasnu upotrebu resursa. Perplexity koristi različite AI modele, uključujući i ChatGPT i DeepSeek, unutar svoje platforme, ali dodatno prikuplja podatke iz brojnih izvora prije generiranja odgovora, 
+                što povećava točnost i transparentnost. Ukratko, Perplexity je idealan za istraživanje i provjeru činjenica, dok su ChatGPT i DeepSeek prikladniji za konverzacijske i tehničke zadatke[1][2][3].
+                <span class="fusnota">* Prompt korišten za generaciju teksta: "Napiši paragraf od minimalno 100 riječi o utjecaju ChatGPT-a na obrazovanje."</span>
+
+              </p>
+              
+            </div>
+            
+            <div class="blok">
+              <h3>Zašto Deepseek?</h3>
+              <p>Deepseek pomaže u istraživanju brzim prikupljanjem informacija, sažimanjem tekstova i objašnjenjem složenih pojmova. Olakšava pretraživanje literature nudeći ključne nalaze, sugerirajući relevantne izvore i pomažući u formuliranju hipoteza. Koristan je za akademsko pisanje – strukturira radove, parafrazira i pruža primjere citiranja. U tehničkim područjima asistira kod programiranja i analize podataka. Iako ne zamjenjuje primarne izvore, ubrzava početne faze istraživanja. Zbog mogućih ograničenja u točnosti i ažurnosti, njegovi odgovori uvijek zahtijevaju kritičku provjeru.</p>
+            </div>
+            
+
+
+
+        </div>
+ 
+      
+    </main>
+
+    <footer>
+        <a href="https://chatgpt.com/"> <img src="resursi/slike/ChatGPT-logo.png" alt="chat" width="40" height="40" ></a>
+        <a href="https://www.perplexity.ai/"> <img src="resursi/slike/Perplexity-logo.png" alt="preplexity" width="50" height="50" ></a>
+        <a href="https://chat.deepseek.com/"> <img src="resursi/slike/deepseek-logo.png" alt="deepeseek" width="50" height="50" ></a>
+        <p> Emanuel Vukovac &copy; 2025.</p>
+        <a href="http://validator.w3.org/check?uri=%7buri%7d/"> <img src="resursi/slike/HTML5.png" alt="html" width="50" height="50" ></a>
+    </footer>
+
+
+</body>
+</html>
